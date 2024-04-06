@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import { onMounted } from 'vue'
 
 export default {
 	props: {
@@ -13,6 +14,10 @@ export default {
 		}
 	},
 	setup(props) {
+
+		onMounted(() => {
+			console.log('feature loaded!');
+		})
 
 	}
 }
